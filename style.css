@@ -1,0 +1,79 @@
+/* change box model */
+* {
+    box-sizing: border-box;
+}
+
+
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+hr {
+    border: none;
+    height: 3px;
+    color: #333;
+    background-color: #333;
+
+    margin-bottom: 50px;
+}
+
+/* make Grid lines visible */
+
+div.box {
+    border: 3px solid black;
+}
+
+/* target gameGrid */
+
+div#gameGrid {
+
+    display: grid;
+    grid-template: repeat(3, 175px) / repeat(3, 175px);
+
+    justify-content: center;
+}
+
+/* target boxes/grid pieces */
+
+div.box {
+
+    text-align: center;
+
+}
+
+div.box h2 {
+
+    padding: 25% 0;
+
+}
+
+/* mouse hover effect */
+div.box:hover {
+
+    background-color: gold;
+    transition: 0.25s;
+}
+
+/* remove lines from Grid */
+
+div#box1, div#box2, div#box3 {
+
+    border-top: none;
+}
+
+div#box3, div#box6, div#box9 {
+
+    border-right: none;
+}
+
+div#box7, div#box8, div#box9 {
+
+    border-bottom: none;
+}
+
+div#box1, div#box4, div#box7 {
+
+    border-left: none;
+}
